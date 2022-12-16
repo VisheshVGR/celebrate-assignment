@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 26%, rgba(0, 212, 255, 1) 100%);
+}
+
+.mask1 {
+  mask-image: url(./asset/user_image_frame_1.png);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+}
+
+.mask2 {
+  mask-image: url(./asset/user_image_frame_2.png);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+}
+
+.mask3 {
+  mask-image: url(./asset/user_image_frame_3.png);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+}
+
+.mask4 {
+  mask-image: url(./asset/user_image_frame_4.png);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+}
+
+.App {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(250, 250, 250, 0.3);
+  max-height: 80vh;
+  max-width: 80vw;
+  overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+.App::-webkit-scrollbar {
+  width: 16px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-upload-btn {
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.file-upload-btn:hover {
+  background-color: #444;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+.options div {
+  width: 50%;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.options div:hover {
+  background-color: #555;
+}
+
+.ReactCrop {
+  max-height: 30vh;
+  margin: 0 auto;
+}
+
+.prob-stat .btn {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #aaa;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.prob-stat .btn:hover {
+  background-color: #ccc;
+}
+
+.prob-stat p {
+  padding: 10px 20px;
+  background-color: #ccc;
+  margin-top: 0px;
+}
